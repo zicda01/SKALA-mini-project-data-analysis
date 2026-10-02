@@ -1,0 +1,7 @@
+batch_a,batch_b,scope,protocols_a,protocols_b,shared_protocols,shared_keys
+batch1,batch2,all_entries,23,20,2,4.8C(80%)-4.8C|6C(60%)-3C
+batch1,batch2,valid_life,23,12,2,4.8C(80%)-4.8C|6C(60%)-3C
+batch1,batch3,all_entries,23,8,0,
+batch1,batch3,valid_life,23,8,0,
+batch2,batch3,all_entries,20,8,1,4.8C(80%)-4.8C-newstructure
+batch2,batch3,valid_life,12,8,1,4.8C(80%)-4.8C-newstructure

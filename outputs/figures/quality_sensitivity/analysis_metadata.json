@@ -1,0 +1,21 @@
+{
+  "strategies": [
+    "N01",
+    "N02",
+    "N03"
+  ],
+  "early_cycles": [
+    10,
+    100
+  ],
+  "expected_early_observations": 91,
+  "high_QD_threshold_ah": 1.32,
+  "temperature_review": "early mean Tmax>100 or Tmin<-50 or Tmax<Tmin; native units; exploratory flag",
+  "no_imputation": true,
+  "no_cell_deletion": true,
+  "correlation_populations": [
+    "common_cells",
+    "all_valid"
+  ],
+  "sources": "Original three batch summaries; no detailed cycle alteration"
+}

@@ -1,0 +1,34 @@
+{
+  "source": "/Users/soobin/myfolder/workspace/mini-project-data-analysis/data/processed/day2/train_batch1.parquet",
+  "source_sha256": "30d496f37fbcc97f2fa4aaa45ffcb201a7b9a80609564450a755b2086f933f1f",
+  "candidate_selection": "outputs/tables/day2/boosting_comparison/candidate_selection.json",
+  "configuration": {
+    "config_id": "linear_regression",
+    "model": "ols",
+    "feature_set": "variance_only",
+    "target": "raw",
+    "alpha": null
+  },
+  "features": [
+    "log10_deltaQ_var"
+  ],
+  "metrics": {
+    "model": "Linear Regression",
+    "feature": "log10_deltaQ_var",
+    "target": "untransformed cycle_life",
+    "development_n": 29,
+    "holdout_n": 7,
+    "holdout_mape_pct": 9.080206758437907,
+    "holdout_mae_cycles": 77.55833119073351,
+    "holdout_rmse_cycles": 91.64283873855707,
+    "nonpositive_prediction_n": 0,
+    "development_cv_mean_fold_mape_pct": 8.616771550592237,
+    "holdout_minus_cv_mape_pp": 0.46343520784567005,
+    "holdout_evaluated": true,
+    "batch2_read_or_evaluated": false,
+    "selection_revisited": false
+  },
+  "development_cv_folds": 5,
+  "holdout_used_for_selection": false,
+  "prediction_clipping": false
+}

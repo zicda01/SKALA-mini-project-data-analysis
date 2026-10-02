@@ -1,0 +1,47 @@
+{
+  "strategies": [
+    "N04",
+    "N05",
+    "N06"
+  ],
+  "early_cycles": [
+    10,
+    100
+  ],
+  "detail_cycle_checks": 15,
+  "minimum_correlation_n": 5,
+  "pearson_input": "log10(deltaQ_var)",
+  "time_gap_display": "break line when adjacent dt >20*median positive dt; shade interval",
+  "current_state_deadband_native": 0.05,
+  "no_imputation": true,
+  "original_cell_entries": 139,
+  "selected_cells": {
+    "batch1": [
+      0,
+      3,
+      44
+    ],
+    "batch2": [
+      0,
+      38,
+      22
+    ],
+    "batch3": [
+      6,
+      7,
+      3
+    ]
+  },
+  "event_cycles": {
+    "batch1_cell0": [
+      11,
+      12,
+      13
+    ],
+    "batch2_cell38": [
+      99,
+      100,
+      101
+    ]
+  }
+}

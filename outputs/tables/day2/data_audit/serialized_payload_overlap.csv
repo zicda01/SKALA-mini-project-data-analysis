@@ -1,0 +1,7 @@
+batch_a,batch_b,field,equal_payload_pair_n,usable_as_physical_identity
+batch1,batch2,barcode_payload,46,False
+batch1,batch2,channel_payload,45,False
+batch1,batch3,barcode_payload,46,False
+batch1,batch3,channel_payload,46,False
+batch2,batch3,barcode_payload,46,False
+batch2,batch3,channel_payload,45,False

@@ -1,0 +1,24 @@
+{
+  "source": "data/processed/day2/train_batch1.parquet",
+  "source_sha256": "30d496f37fbcc97f2fa4aaa45ffcb201a7b9a80609564450a755b2086f933f1f",
+  "development_n": 29,
+  "configurations": 21,
+  "folds": 5,
+  "ridge_alphas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "selection_metric": "unweighted mean of validation-fold MAPE percentages",
+  "holdout_evaluated": false,
+  "batch2_read_or_evaluated": false,
+  "batch3_read_or_evaluated": false,
+  "model_selection_uses_same_cv_as_reported": true,
+  "prediction_clipping": false,
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6"
+  }
+}

@@ -1,0 +1,4 @@
+batch_a,batch_b,shared_barcode_n,shared_barcodes
+batch1,batch2,0,
+batch1,batch3,0,
+batch2,batch3,0,

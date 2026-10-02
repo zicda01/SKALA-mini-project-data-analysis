@@ -1,0 +1,64 @@
+batch,group_type,group,n,pearson_logvar,spearman,status
+batch1,policy,3.6C(80%)-3.6C,3,,,insufficient_or_constant
+batch1,policy,4.4C(80%)-4.4C,1,,,insufficient_or_constant
+batch1,policy,4.8C(80%)-4.8C,2,,,insufficient_or_constant
+batch1,policy,4C(80%)-4C,2,,,insufficient_or_constant
+batch1,policy,5.4C(40%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,5.4C(50%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,5.4C(50%)-3C,2,,,insufficient_or_constant
+batch1,policy,5.4C(60%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,5.4C(60%)-3C,2,,,insufficient_or_constant
+batch1,policy,5.4C(70%)-3C,2,,,insufficient_or_constant
+batch1,policy,5.4C(80%)-5.4C,2,,,insufficient_or_constant
+batch1,policy,6C(30%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,6C(40%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,6C(40%)-3C,2,,,insufficient_or_constant
+batch1,policy,6C(50%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,6C(50%)-3C,2,,,insufficient_or_constant
+batch1,policy,6C(60%)-3C,2,,,insufficient_or_constant
+batch1,policy,7C(30%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,7C(40%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,7C(40%)-3C,2,,,insufficient_or_constant
+batch1,policy,8C(15%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,8C(25%)-3.6C,2,,,insufficient_or_constant
+batch1,policy,8C(35%)-3.6C,2,,,insufficient_or_constant
+batch1,all,all,46,-0.8861231036774796,-0.8711607269559923,computed
+batch1,life_group,long (>1000),10,-0.8378407929847489,-0.7939393939393938,computed
+batch1,life_group,medium (500–1000),36,-0.8275625963959617,-0.8011327135486649,computed
+batch2,policy,3.6C(30%)-6C,2,,,insufficient_or_constant
+batch2,policy,3.6C(80%)-3.6C(SLOWCYCLE,0,,,insufficient_or_constant
+batch2,policy,3.6C(9%)-5C,2,,,insufficient_or_constant
+batch2,policy,3.6C(9%)-5C(SLOWCYCLE,0,,,insufficient_or_constant
+batch2,policy,4.65C(44%)-5C,2,,,insufficient_or_constant
+batch2,policy,4.65C(69%)-6C,2,,,insufficient_or_constant
+batch2,policy,4.8C(80%)-4.8C,5,-0.7538641282724144,-0.8999999999999998,computed
+batch2,policy,4.8C(80%)-4.8C(SLOWCYCLE,0,,,insufficient_or_constant
+batch2,policy,4.8C(80%)-4.8C-newstructure,3,,,insufficient_or_constant
+batch2,policy,5.2C(50%)-4.25C,5,0.045923587384009874,-0.31622776601683794,computed
+batch2,policy,5.2C(58%)-4C,4,,,insufficient_or_constant
+batch2,policy,5.2C(58%)-4C(SLOWCYCLE,0,,,insufficient_or_constant
+batch2,policy,5.2C(58%)-4C-newstructure,3,,,insufficient_or_constant
+batch2,policy,5.6C(26%)-4.5C,6,-0.44597316642801094,-0.4285714285714286,computed
+batch2,policy,5.6C(26%)-4.5C-newstructure,3,,,insufficient_or_constant
+batch2,policy,6C(60%)-3C,2,,,insufficient_or_constant
+batch2,policy,VarCharge-2C-100cycles,0,,,insufficient_or_constant
+batch2,policy,VarCharge-4C-100cycles,0,,,insufficient_or_constant
+batch2,policy,VarCharge-6C-100cycles,0,,,insufficient_or_constant
+batch2,policy,VarCharge-8C-100cycles,0,,,insufficient_or_constant
+batch2,all,all,39,-0.9018830736836241,-0.7089786451951733,computed
+batch2,life_group,long (>1000),3,,,insufficient_or_constant
+batch2,life_group,medium (500–1000),8,-0.8212458020543033,-0.4285714285714286,computed
+batch2,life_group,short (<500),28,-0.2916874769429332,-0.28798249094367906,computed
+batch2,life_group,unavailable life,0,,,insufficient_or_constant
+batch3,policy,3.7C(31%)-5.9C-newstructure,3,,,insufficient_or_constant
+batch3,policy,4.8C(80%)-4.8C-newstructure,6,0.14530055414148232,0.14285714285714288,computed
+batch3,policy,5.3C(54%)-4C-newstructure,8,-0.7969806085447458,-0.7857142857142858,computed
+batch3,policy,5.6C(19%)-4.6C-newstructure,8,-0.721878875938358,-0.4523809523809524,computed
+batch3,policy,5.6C(36%)-4.3C-newstructure,8,-0.03963039970911048,0.09523809523809526,computed
+batch3,policy,5.9C(15%)-4.6C-newstructure,2,,,insufficient_or_constant
+batch3,policy,5.9C(60%)-3.1C-newstructure,2,,,insufficient_or_constant
+batch3,policy,5C(67%)-4C-newstructure,7,-0.7174486983095343,-0.9285714285714288,computed
+batch3,all,all,44,-0.7018620670132989,-0.7972372984772357,computed
+batch3,life_group,long (>1000),23,-0.46550401331968405,-0.724308300395257,computed
+batch3,life_group,medium (500–1000),21,-0.721454680582542,-0.4087070388455669,computed
+batch3,life_group,unavailable life,0,,,insufficient_or_constant

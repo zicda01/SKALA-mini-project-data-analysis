@@ -1,0 +1,27 @@
+{
+  "created": "2026-10-01",
+  "cycle": 10,
+  "n_cell_entries": 139,
+  "current_state_threshold_native": 0.05,
+  "near_peak_fraction": 0.8,
+  "gap_rule": "dt >20*median(positive dt)",
+  "time_weight": "only intervals with dt>0, no gap, positive I at both endpoints",
+  "phase_definition": "first/last half of accepted positive-current duration; not SOC",
+  "correlation_minimum_n": 5,
+  "no_imputation": true,
+  "no_new_plots": true,
+  "scope": "cycle10 proxy pattern features vs early10-100 masked QD slope and stored life",
+  "knee_config": {
+    "mask_high_QD": true,
+    "median_window": 11,
+    "min_span": 75,
+    "known_life_cutoff": true,
+    "single_condition_only": true
+  },
+  "limitations": [
+    "native units",
+    "one representative cycle per entry",
+    "observational correlations",
+    "known-life/all-entries and within-policy statistics separated"
+  ]
+}

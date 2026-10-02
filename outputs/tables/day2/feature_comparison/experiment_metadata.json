@@ -1,0 +1,46 @@
+{
+  "source": "data/processed/day2/train_batch1.parquet",
+  "source_sha256": "30d496f37fbcc97f2fa4aaa45ffcb201a7b9a80609564450a755b2086f933f1f",
+  "feature_sets": {
+    "variance_only": [
+      "log10_deltaQ_var"
+    ],
+    "minimum_only": [
+      "deltaQ_min"
+    ],
+    "variance_retained": [
+      "log10_deltaQ_var",
+      "QD_slope_retained"
+    ],
+    "variance_masked": [
+      "log10_deltaQ_var",
+      "QD_slope_masked"
+    ],
+    "minimum_retained": [
+      "deltaQ_min",
+      "QD_slope_retained"
+    ],
+    "minimum_masked": [
+      "deltaQ_min",
+      "QD_slope_masked"
+    ]
+  },
+  "target": "untransformed cycle_life",
+  "deltaQ_min_representation": "direct signed minimum; no log or absolute-value transform",
+  "ridge_alphas": [
+    0.1,
+    10.0
+  ],
+  "configurations": 18,
+  "development_n": 29,
+  "folds": 5,
+  "changed_slope_cell_ids": [
+    18
+  ],
+  "holdout_evaluated": false,
+  "batch2_read_or_evaluated": false,
+  "prior_results_reproduced": true,
+  "new_feature_extraction": false,
+  "prediction_clipping": false,
+  "selection_on_same_cv": true
+}

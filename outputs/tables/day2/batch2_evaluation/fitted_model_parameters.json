@@ -1,0 +1,8 @@
+{
+  "train_feature_mean": -3.790902487807261,
+  "train_feature_scale": 0.22957019737706214,
+  "coefficient_scaled_input": -121.19046397736716,
+  "coefficient_original_input": -527.9015541303712,
+  "intercept_scaled_input": 788.4166666666666,
+  "intercept_original_input": -1212.8066482034765
+}

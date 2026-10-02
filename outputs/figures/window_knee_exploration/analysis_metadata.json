@@ -1,0 +1,74 @@
+{
+  "strategies": [
+    "N07",
+    "N08"
+  ],
+  "original_cell_entries": 139,
+  "endpoint_cycles": [
+    50,
+    75,
+    100
+  ],
+  "reference_cycle": 10,
+  "endpoint_rows": 417,
+  "detail_alignment_checks": 556,
+  "pearson_input": "raw deltaQ variance (scatter x axis log)",
+  "high_QD_mask_threshold_Ah": 1.32,
+  "Qdlin_review_only": {
+    "minimum_Ah": -0.05,
+    "maximum_relative_to_detail_Qd_max": 1.2
+  },
+  "knee_selected_cells": {
+    "batch1": [
+      11,
+      2,
+      0,
+      18
+    ],
+    "batch2": [
+      11,
+      9,
+      33,
+      38
+    ],
+    "batch3": [
+      5,
+      19
+    ]
+  },
+  "knee_configurations": {
+    "mask_high_QD": [
+      false,
+      true
+    ],
+    "centered_median_window": [
+      1,
+      11,
+      31
+    ],
+    "min_span_each_side": [
+      30,
+      75
+    ]
+  },
+  "knee_default": {
+    "mask_high_QD": true,
+    "window": 11,
+    "min_span": 75
+  },
+  "knee_method": "continuous hinge; longest contiguous finite segment; no gap joining; cycle>=10 and <=known cycle_life",
+  "knee_search_step": 5,
+  "knee_min_points_each_side": 20,
+  "knee_heuristic": {
+    "minimum_relative_SSE_improvement": 0.2,
+    "post_slope_negative": true,
+    "minimum_slope_decrease_Ah_per_cycle": 1e-05,
+    "minimum_negative_slope_magnitude_ratio": 1.5
+  },
+  "local_slope_windows": [
+    31,
+    75
+  ],
+  "no_imputation": true,
+  "interpretation": "retrospective descriptive candidates, not verified physical knees or early prediction features"
+}

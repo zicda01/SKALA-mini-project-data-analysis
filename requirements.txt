@@ -1,0 +1,149 @@
+# 노트북 중심 배터리 EDA 환경 — 설치 버전 고정 목록
+# 직접 사용하는 분석 도구와 해당 도구가 설치한 간접 의존성을 함께 포함한다.
+# 아래 분류는 주요 용도 기준이며, 일부 패키지는 여러 그룹에서 함께 사용된다.
+# 설치: uv pip install -r requirements.txt
+
+
+# 1. 데이터 분석·수치 계산
+# 배열·DataFrame·통계 계산과 HDF5/MATLAB v7.3 읽기, Parquet 캐시 저장에 사용한다.
+numpy==2.4.6
+pandas==3.0.6
+scipy==1.17.1
+h5py==3.16.0
+pyarrow==25.0.1
+narwhals==2.26.0
+
+# 2. 그래프·이미지 처리
+# EDA 그래프를 만들고 폰트·색상·이미지 및 노트북 내 그래프 표시를 지원한다.
+matplotlib==3.11.2
+seaborn==0.13.2
+matplotlib-inline==0.2.2
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.66.1
+kiwisolver==1.5.1
+pillow==12.3.0
+
+# 3. 데이터 다운로드·모델링 도구
+# Kaggle 다운로드와 진행률 표시에 사용한다. scikit-learn은 후속 모델링용이며 학습 실행은 별도 단계다.
+kagglehub==1.0.2
+kagglesdk==0.1.37
+tqdm==4.70.1
+scikit-learn==1.9.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+cloudpickle==3.1.2
+
+# 4. Jupyter 실행 환경·노트북·위젯
+# 노트북 화면, Python 커널, 서버, 파일 검증·실행·변환 및 대화형 위젯을 제공한다.
+jupyterlab==4.6.4
+ipykernel==7.4.0
+ipython==9.17.1
+ipywidgets==8.1.9
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.1
+comm==0.2.3
+jupyter-builder==1.2.3
+jupyter-client==8.10.0
+jupyter-core==5.9.1
+jupyter-events==0.12.1
+jupyter-lsp==2.3.1
+jupyter-server==2.21.1
+jupyter-server-terminals==0.5.4
+jupyterlab-pygments==0.3.0
+jupyterlab-server==2.28.1
+jupyterlab-widgets==3.0.17
+notebook-shim==0.2.4
+widgetsnbextension==4.0.16
+traitlets==5.16.1
+pyzmq==27.2.0
+
+# 5. 코드 편집·디버깅·터미널
+# 자동완성, 구문 분석, 디버깅, 오류 표시와 Jupyter 터미널 동작을 지원한다.
+appnope==1.0.0
+asttokens==3.0.2
+debugpy==1.8.22
+executing==2.2.1
+ipython-pygments-lexers==1.1.1
+jedi==0.20.0
+parso==0.8.7
+pexpect==4.9.0
+prompt-toolkit==3.0.53
+ptyprocess==0.7.0
+pure-eval==0.2.4
+pygments==2.21.0
+stack-data==0.6.3
+terminado==0.18.1
+wcwidth==0.9.1
+
+# 6. 네트워크·비동기 통신
+# HTTP 다운로드, 인증서·문자 인코딩, 비동기 서버와 WebSocket 통신에 사용된다.
+anyio==4.15.1
+async-lru==2.3.0
+certifi==2026.7.22
+charset-normalizer==3.5.2
+h11==0.16.0
+httpcore==1.0.9
+httpx==0.28.1
+idna==3.20
+nest-asyncio2==1.7.3
+requests==2.34.2
+tornado==6.5.10
+urllib3==2.8.0
+websocket-client==1.9.2
+
+# 7. HTML·문서 렌더링
+# 노트북 출력과 HTML 내보내기를 위한 템플릿, Markdown·HTML·CSS 처리 및 콘텐츠 정리를 지원한다.
+beautifulsoup4==4.15.0
+bleach==6.4.0
+defusedxml==0.7.1
+jinja2==3.1.6
+markupsafe==3.0.3
+mistune==3.3.4
+pandocfilters==1.5.1
+soupsieve==2.10
+tinycss2==1.5.1
+webcolors==25.10.0
+webencodings==0.6.1
+
+# 8. JSON·스키마·형식 검증
+# 노트북·서버 설정의 JSON 구조와 날짜·URI 등의 형식을 검증하고 직렬화를 지원한다.
+fastjsonschema==2.22.2
+fqdn==1.6.0
+isoduration==20.11.0
+json5==0.15.0
+jsonpointer==3.1.1
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+lark==1.3.1
+protobuf==7.36.2
+pyparsing==3.3.3
+pyyaml==6.0.3
+referencing==0.37.0
+rfc3339-validator==0.1.4
+rfc3986-validator==0.1.1
+rfc3987-syntax==1.1.0
+rpds-py==2026.6.3
+uri-template==1.3.0
+
+# 9. 보안·시스템·공통 유틸리티
+# Jupyter 인증, 시스템 자원·경로·로그 관리, 날짜 처리와 패키지 호환성을 지원한다.
+argon2-cffi==25.1.0
+argon2-cffi-bindings==26.1.0
+arrow==1.4.0
+attrs==26.1.0
+babel==2.18.0
+cffi==2.1.1
+overrides==7.7.0
+packaging==26.3
+platformdirs==4.12.2
+prometheus-client==0.26.0
+psutil==7.2.2
+pycparser==3.0
+python-dateutil==2.9.0.post0
+python-json-logger==4.2.0
+send2trash==2.1.0
+six==1.17.0
+typing-extensions==4.16.0
+tzdata==2026.4

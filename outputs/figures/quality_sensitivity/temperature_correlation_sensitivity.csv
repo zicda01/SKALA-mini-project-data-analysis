@@ -1,0 +1,7 @@
+batch,mode,n,pearson
+batch1,all,46,0.6431757866334674
+batch1,review_excluded,46,0.6431757866334674
+batch2,all,47,-0.9987524251848665
+batch2,review_excluded,46,0.5502602918436144
+batch3,all,46,0.7549160790782486
+batch3,review_excluded,46,0.7549160790782486

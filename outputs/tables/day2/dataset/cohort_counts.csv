@@ -1,0 +1,8 @@
+batch,partition,n
+batch1,development,29
+batch1,excluded,10
+batch1,holdout,7
+batch2,excluded,8
+batch2,test_batch2,39
+batch3,batch3_candidate,44
+batch3,excluded,2

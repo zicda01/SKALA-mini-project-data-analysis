@@ -1,0 +1,78 @@
+{
+  "source": "data/processed/day2/train_batch1.parquet",
+  "source_sha256": "30d496f37fbcc97f2fa4aaa45ffcb201a7b9a80609564450a755b2086f933f1f",
+  "development_n": 29,
+  "cv_fits": 30,
+  "diagnostic_development_fits": 3,
+  "features": [
+    "log10_deltaQ_var"
+  ],
+  "target": "untransformed cycle_life",
+  "configurations": [
+    {
+      "config_id": "linear_regression",
+      "model": "ols",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": null
+    },
+    {
+      "config_id": "ridge_a0.1",
+      "model": "ridge",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": 0.1
+    },
+    {
+      "config_id": "boosting_d1_n50",
+      "model": "gradient_boosting",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": null,
+      "max_depth": 1,
+      "n_estimators": 50
+    },
+    {
+      "config_id": "boosting_d1_n100",
+      "model": "gradient_boosting",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": null,
+      "max_depth": 1,
+      "n_estimators": 100
+    },
+    {
+      "config_id": "boosting_d2_n50",
+      "model": "gradient_boosting",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": null,
+      "max_depth": 2,
+      "n_estimators": 50
+    },
+    {
+      "config_id": "boosting_d2_n100",
+      "model": "gradient_boosting",
+      "feature_set": "variance_only",
+      "target": "raw",
+      "alpha": null,
+      "max_depth": 2,
+      "n_estimators": 100
+    }
+  ],
+  "boosting_fixed_parameters": {
+    "min_samples_leaf": 10,
+    "learning_rate": 0.05,
+    "random_state": 42,
+    "loss": "squared_error",
+    "subsample": 1.0
+  },
+  "best_boosting_cv_config": "boosting_d1_n50",
+  "holdout_evaluated": false,
+  "batch2_read_or_evaluated": false,
+  "prediction_clipping": false,
+  "prior_linear_results_reproduced": true,
+  "response_curve_is_development_fit": true,
+  "selection_on_same_cv": true,
+  "sklearn_version": "1.9.1"
+}

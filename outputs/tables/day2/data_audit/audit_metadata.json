@@ -1,0 +1,97 @@
+{
+  "files": [
+    {
+      "batch": "batch1",
+      "filename": "2017-05-12_batchdata_updated_struct_errorcorrect.mat",
+      "internal_batch_date": "2017-05-12",
+      "n_cells": 46,
+      "identity_fields": {
+        "barcode": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        },
+        "channel_id": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        }
+      }
+    },
+    {
+      "batch": "batch2",
+      "filename": "2018-02-20_batchdata_updated_struct_errorcorrect.mat",
+      "internal_batch_date": "2018-02-20",
+      "n_cells": 47,
+      "identity_fields": {
+        "barcode": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        },
+        "channel_id": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        }
+      }
+    },
+    {
+      "batch": "batch3",
+      "filename": "2018-04-12_batchdata_updated_struct_errorcorrect.mat",
+      "internal_batch_date": "2018-04-12",
+      "n_cells": 46,
+      "identity_fields": {
+        "barcode": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        },
+        "channel_id": {
+          "matlab_classes": [
+            "string"
+          ],
+          "storage_dtypes": [
+            "uint32"
+          ],
+          "identity_decoded": true
+        }
+      }
+    }
+  ],
+  "identity_decoder_scope": "observed scalar MCOS UTF-16LE layout only",
+  "shared_cross_batch_barcode_n": 0,
+  "physical_identity_evidence": "decoded unique barcodes; no assertion about unrecorded relabeling",
+  "exact_cross_batch_early_trace_matches": 0,
+  "nominal_crossing_threshold_Ah": 0.88,
+  "nominal_capacity_reference_Ah": 1.1,
+  "split_preview": {
+    "seed": 42,
+    "test_group_fraction": 0.2,
+    "development_n": 35,
+    "holdout_n": 11,
+    "development_protocols": 18,
+    "holdout_protocols": 5,
+    "approved_for_training": false
+  }
+}

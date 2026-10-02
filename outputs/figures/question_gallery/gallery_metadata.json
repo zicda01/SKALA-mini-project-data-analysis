@@ -1,0 +1,62 @@
+{
+  "early_start": 10,
+  "early_end": 100,
+  "quality_config": {
+    "mask_high_qd": false,
+    "nonpositive_QD_IR": "masked in analysis columns only"
+  },
+  "figures": [
+    {
+      "filename": "01_q1_cycle_life_distribution.png",
+      "question": "Q1",
+      "description": "Cycle-life distribution and box plots"
+    },
+    {
+      "filename": "02_q1_life_group_ratios.png",
+      "question": "Q1",
+      "description": "Lifetime-group proportions"
+    },
+    {
+      "filename": "03_q2_degradation_curves.png",
+      "question": "Q2",
+      "description": "Full and early discharge-capacity curves"
+    },
+    {
+      "filename": "04_q3_delta_q_curves.png",
+      "question": "Q3",
+      "description": "Delta-Q curves by lifetime group"
+    },
+    {
+      "filename": "05_q3_delta_q_variance.png",
+      "question": "Q3",
+      "description": "Delta-Q variance vs lifetime"
+    },
+    {
+      "filename": "06_q4_policy_lifetime.png",
+      "question": "Q4",
+      "description": "Lifetime by charging policy"
+    },
+    {
+      "filename": "07_q4_charging_relationships.png",
+      "question": "Q4",
+      "description": "Charging measures vs lifetime/early slope"
+    },
+    {
+      "filename": "08_q5_target_correlations.png",
+      "question": "Q5",
+      "description": "Pearson/Spearman correlations with lifetime"
+    },
+    {
+      "filename": "09_q5_feature_correlations.png",
+      "question": "Q5",
+      "description": "Feature correlation matrices"
+    }
+  ],
+  "sources": [
+    "https://www.nature.com/articles/s41560-019-0356-8",
+    "https://github.com/rdbraatz/data-driven-prediction-of-battery-cycle-life-before-capacity-degradation"
+  ],
+  "no_imputation": true,
+  "no_target_recalculation": true,
+  "no_cell_merging": true
+}

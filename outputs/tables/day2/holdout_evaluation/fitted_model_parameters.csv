@@ -1,0 +1,2 @@
+feature,train_mean,train_scale,coefficient_scaled_input,coefficient_original_input,intercept_scaled_input,intercept_original_input
+log10_deltaQ_var,-3.7809289328230276,0.21847550880646496,-103.16475641196232,-472.20284312668707,777.3793103448274,-1007.986081394157

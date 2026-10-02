@@ -1,0 +1,42 @@
+{
+  "train_path": "/Users/soobin/myfolder/workspace/mini-project-data-analysis/data/processed/day2/train_batch1.parquet",
+  "train_sha256": "30d496f37fbcc97f2fa4aaa45ffcb201a7b9a80609564450a755b2086f933f1f",
+  "test_path": "/Users/soobin/myfolder/workspace/mini-project-data-analysis/data/processed/day2/test_batch2.parquet",
+  "test_sha256": "73c8dc5baef48b32c14429732d417fb1cc86f551d7c6808ef69f3bfd2fafa234",
+  "frozen_candidate": "outputs/tables/day2/boosting_comparison/candidate_selection.json",
+  "configuration": {
+    "config_id": "linear_regression",
+    "model": "ols",
+    "feature_set": "variance_only",
+    "target": "raw",
+    "alpha": null
+  },
+  "features": [
+    "log10_deltaQ_var"
+  ],
+  "metrics": {
+    "model": "Linear Regression",
+    "feature": "log10_deltaQ_var",
+    "target": "untransformed cycle_life",
+    "train_batch": "batch1",
+    "train_n": 36,
+    "test_batch": "batch2",
+    "test_n": 39,
+    "test_mape_pct": 25.606115313021782,
+    "test_mae_cycles": 129.23485598437978,
+    "test_rmse_cycles": 153.02943665377273,
+    "nonpositive_prediction_n": 0,
+    "target_mape_pct": 9.1,
+    "test_minus_target_mape_pp": 16.50611531302178,
+    "holdout_mape_pct": 9.080206758437907,
+    "development_cv_mean_fold_mape_pct": 8.616771550592237,
+    "test_minus_holdout_mape_pp": 16.525908554583875,
+    "test_minus_development_cv_mape_pp": 16.989343762429545,
+    "candidate_reselected_after_holdout": false,
+    "batch2_used_for_tuning": false,
+    "prediction_clipping": false
+  },
+  "development_cv_fold_mape_pct": 8.616771550592237,
+  "holdout_metrics_path": "outputs/tables/day2/holdout_evaluation/experiment_metadata.json",
+  "test_used_for_tuning": false
+}

@@ -1,0 +1,17 @@
+{
+  "selected_on": "2026-10-02",
+  "model": "LinearRegression",
+  "model_parameters": {},
+  "features": [
+    "log10_deltaQ_var"
+  ],
+  "target": "cycle_life",
+  "target_transform": "none",
+  "preprocessing": "StandardScaler fitted on training partition only",
+  "selection_scope": "Batch 1 development 29, fixed 5-fold CV",
+  "reason": "No replacement benefit from planned feature/target/boosting alternatives; negligible Ridge difference",
+  "holdout_evaluated": false,
+  "batch2_evaluated": false,
+  "next_step": "Fit on development 29 and evaluate reserved holdout 7 without retuning",
+  "fitted_model_saved": false
+}

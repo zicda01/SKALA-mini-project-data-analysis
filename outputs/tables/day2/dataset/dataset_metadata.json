@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "created_date": "2026-10-02",
+  "sources": {
+    "gallery": {
+      "path": "outputs/figures/question_gallery/cell_features_for_gallery.csv",
+      "sha256": "b52aae7b638b3459c2e97437c3dc5f9213a67f3c595fbefd2d6c4b76697777e2"
+    },
+    "quality": {
+      "path": "outputs/figures/quality_sensitivity/early_qd_sensitivity.csv",
+      "sha256": "35c4a0e940e7b7a0cc70b53770af44e9b51766d32eb067ad630a80050ac6ddff"
+    },
+    "audit": {
+      "path": "outputs/tables/day2/data_audit/cell_audit.csv",
+      "sha256": "7cf9484c250e5163894446ffcf2bb169636a8702d30b97ab530c9c99cfd36490"
+    }
+  },
+  "versions": {
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "pyarrow": "25.0.1"
+  },
+  "python": "3.11.15",
+  "prediction_cycle": 100,
+  "feature_window": [
+    10,
+    100
+  ],
+  "target": "cycle_life",
+  "feature_sets": {
+    "F1": [
+      "log10_deltaQ_var"
+    ],
+    "F2": [
+      "log10_deltaQ_var",
+      "QD_slope_masked"
+    ]
+  },
+  "batch1_excluded_uncertain_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    8,
+    10,
+    12,
+    13,
+    22
+  ],
+  "exclusion_basis": "DAY2 data audit report: incomplete EOL observations; not an automatic 0.90 Ah filter",
+  "split": {
+    "seed": 42,
+    "holdout_group_fraction": 0.2,
+    "cv_folds": 5,
+    "group": "protocol_key"
+  },
+  "fitted_preprocessing": false,
+  "models_trained": false,
+  "batch3_status": "candidates only; additional curve-quality review needed before optional evaluation",
+  "artifacts": {
+    "all_cells": "data/processed/day2/all_cells.parquet",
+    "train_batch1": "data/processed/day2/train_batch1.parquet",
+    "test_batch2": "data/processed/day2/test_batch2.parquet",
+    "batch3_candidates": "data/processed/day2/batch3_candidates.parquet"
+  },
+  "counts": [
+    {
+      "batch": "batch1",
+      "partition": "development",
+      "n": 29
+    },
+    {
+      "batch": "batch1",
+      "partition": "excluded",
+      "n": 10
+    },
+    {
+      "batch": "batch1",
+      "partition": "holdout",
+      "n": 7
+    },
+    {
+      "batch": "batch2",
+      "partition": "excluded",
+      "n": 8
+    },
+    {
+      "batch": "batch2",
+      "partition": "test_batch2",
+      "n": 39
+    },
+    {
+      "batch": "batch3",
+      "partition": "batch3_candidate",
+      "n": 44
+    },
+    {
+      "batch": "batch3",
+      "partition": "excluded",
+      "n": 2
+    }
+  ]
+}

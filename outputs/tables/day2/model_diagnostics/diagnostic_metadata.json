@@ -1,0 +1,16 @@
+{
+  "model_changed": false,
+  "hyperparameters_tuned": false,
+  "batch2_used_only_for_posthoc_diagnostics": true,
+  "independent_test_reused_for_selection": false,
+  "development_oof_n": 29,
+  "holdout_n": 7,
+  "batch2_test_n": 39,
+  "batch1_batch2_protocol_groups_in_common": [
+    "4.8C(80%)-4.8C",
+    "6C(60%)-3C"
+  ],
+  "batch1_only_protocol_group_count": 18,
+  "batch2_only_protocol_group_count": 10,
+  "interpretation": "descriptive post-evaluation diagnostics; no causal claims"
+}
